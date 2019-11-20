@@ -1,0 +1,568 @@
+body{
+    margin: 0px;
+    padding:0px;
+    font-family: 'Helvetica','ヒラギノ角ゴ Pro W6',sans-serif;
+    font: inherit;
+    -webkit-font-smoothing: antialiased;
+    
+}
+@font-face {
+    font-family: 'ClassyBeautiful';
+    src: url('font/ClassyBeautiful.ttf') format('truetype');
+
+  }
+@font-face {
+    font-family: 'meison';
+    src: url('font/maisonneuebook.ttf') format('truetype');
+}
+a {text-decoration: none;}
+li{
+    list-style: none;
+}
+
+p{margin: 0px 0px ;}
+
+h1{   
+    /* font-familyの設定する */
+    font-size: 72px;
+    margin: 0px;
+    font-family: "arial unicode ms";
+    color: #191919;
+    
+}
+h2{   
+    /* font-familyの設定する */
+    font-size: 56px;
+    margin: 0px;
+    font-family: "arial unicode ms";
+    color: #191919;
+}
+h3{   
+    /* font-familyの設定する */
+    font-size: 32px;
+    color: #191919;
+    font-family: "Helvetica";
+    letter-spacing: 0.9px;
+}
+h4{
+    font-size:24px;
+    font-family: "meison";
+    letter-spacing: 0.6px;
+    margin: 0px;
+
+}
+
+header{
+    height:710px;
+}
+.classy{
+    /* font-familyの設定する */
+    font-family:'ClassyBeautiful'; 
+}
+.navigation{
+    min-width:1280px;
+    height:70px;
+    display: grid;
+    grid-template-columns: 1fr 240px 1fr;
+
+}
+.top{
+    color: #191919;
+    font-size: 40px;
+    grid-column: 2/3;
+    padding-top:18px;
+    text-align: center;
+}
+nav ul{
+    padding-top: 35px;
+    margin-right: 125px;
+    margin: 0px ;
+    float: left;
+    display:flex;
+}
+nav li a{
+    color: #191919;
+    text-align: center;
+    float: left;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    width:120px;
+    position: relative;
+
+}
+nav li a:before{
+    content:"";
+    display:block;
+    position:absolute;
+    left:100%;
+    right:100%;
+    bottom:0px;
+    height:1px;
+    background-color:#191919;
+    -webkit-transition:left 0.3s ease, right 0.3s ease;
+    -moz-transition:left 0.3s ease, right 0.3s ease;
+    -o-transition:left 0.3s ease, right 0.3s ease;
+    transition:left 0.3s ease, right 0.3s ease;
+}
+nav li a:hover:before {
+    left:0;
+    right:0;
+}
+.top_img{
+    height:640px;
+    width:100%;
+    min-width:1280px;
+    object-fit: cover;
+}
+main{
+    position: relative;
+
+}
+/* collection */
+.collection_wrapper{
+
+}
+.collection{
+   width:1280px;
+    height:1753px;
+    margin:0 auto;
+    position: relative;
+}
+.collection h1{
+    text-align: center;
+    letter-spacing: 1.86px;
+    padding-top:34px;
+}
+.c_pho{
+    position: absolute;
+    left:126px;
+    top:198px;
+    width:375px;
+    height:408px;
+}
+
+.c_back a{
+    position: absolute;
+    left:240px;
+    top:386px;
+    z-index: 9;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.63);
+    font-style: oblique;
+    font-family:'ClassyBeautiful'; 
+
+}
+.b_pho{
+    position: absolute;
+    top:650px ;
+    left: 773px;
+    width:382px;
+    height:448px;
+}
+.s_pho{
+    position:absolute;
+    top:1039px;
+    left:90px;
+    width:447px;
+    height:375px;
+}
+/* clothes */
+.clothes{
+    height: 503px;
+    display: flex;
+
+}
+.c_content{
+    position:absolute;
+    width:624px;
+    height: 328px;
+    top:198px;
+    left: 615px;
+
+}
+.c_content h2{
+    letter-spacing: 1.35px;
+}
+.c_content p{
+    width:540px;
+    height:213px;
+    padding-top: 63px;
+    margin:0px;
+    letter-spacing: 0.48px;
+    font-size:100%;
+    line-height:1.6875;
+
+}
+/* baggage */
+.baggage{
+    height: 322px;
+}
+.b_content{
+    position:absolute;
+    width:625px;
+    height: 228px;
+    top: 705px;
+    left:40px;
+    float: left;
+}
+.b_content h2{
+    letter-spacing: 1.35px;
+    padding-left:85px;
+}
+.b_content p{
+    width:540px;
+    height:213px;
+    padding-top: 63px;
+    padding-left:85px;
+    margin:0px;
+    letter-spacing: 0.48px;
+    font-size:100%;
+    line-height:1.6875;
+
+
+}
+/* shoes */
+.shoes{
+    height: 224px;
+
+}
+.s_content{
+    position:absolute;
+    top:1113px;
+    left:615px;
+    width:625px;
+    height: 224px;
+    float: right;
+    padding-top:0px;
+}
+.s_content h2{
+    letter-spacing: 1.35px;
+}
+.s_content p{
+    width:540px;
+    height:111px;
+    padding-top: 63px;
+    margin:0px;
+    letter-spacing: 0.48px;
+    line-height:1.6875;
+
+}
+/* button */
+.bt{
+    position:absolute;
+    top:1534px;
+    left:437px;
+    display:block;
+    background-color:#191919 ;
+    width:407px;
+    height:89px;
+    color: #FFFFFF;
+    line-height: 89px;
+    font-size:45px;
+    text-align: center;
+
+}
+.bt:hover{
+
+}
+/* object & dress*/
+.objects_wrapper ,.dress_wrapper{
+    width:100%;
+    height:700px;
+    background-color: #FFF9F2;
+
+}
+.dress_wrapper{
+    background-color:#FFF;
+
+}
+.objects , .dress{
+    width: 1280px;
+    height:700px;
+    background-color:#FFF9F2;
+    margin: 0 auto;
+    position: relative;
+}
+.dress{
+    background-color:#FFF;
+
+}
+.o_content, .dress section{
+    width:433px;
+    height:409.73px;
+    background-color: #FFFFFF;
+    left:40px;
+    position: absolute;
+    top:145px;
+    
+}
+.dress section{
+    background-color: #FFF9F2;
+}
+.o_content h3 ,.dress section h3{
+    padding-left:78px;
+    padding-top:75px;
+
+}
+.dress section h3{
+    line-height: 1.67;
+}
+.o_content p {
+    width:278px;
+    height:131px;
+    padding-left:78px;
+    line-height:1.6875;
+    margin-bottom:29px;
+
+}
+
+.o_content a ,.dress a{
+    margin-left:78px;
+
+    position:relative;
+
+}
+
+.uv{
+    margin-left:78px;
+}
+.d_uv{
+    margin-left:78px;
+}    
+
+.o_content a:before {
+    content:"";
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:1px;
+    background-color:#191919;
+    -webkit-transition:width 0.2s ease;
+    -moz-transition:width 0.2s ease;
+    -o-transition:width 0.2s ease;
+    transition:width 0.2s ease;
+}
+.dress a:before {
+    content:"";
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:1px;
+    background-color:#191919;
+    -webkit-transition:width 0.2s ease;
+    -moz-transition:width 0.2s ease;
+    -o-transition:width 0.2s ease;
+    transition:width 0.2s ease;
+}
+
+.o_content a:hover:before {
+    width:100%;
+}
+.dress a:hover:before {
+    width:100%;
+}
+.ob_pho,.d_pho{
+    width:767px;
+    height:410px;
+    padding-left:473px;
+    padding-top:145px;
+
+}
+/* new */
+.new_wrapper{
+    height:1283px;
+    width:100%;
+    background-color: #CED3CA;
+}
+.new{
+    height:1283px;
+    width:1280px;
+    background-color: #CED3CA;
+    margin:0 auto;
+}
+.new_logo{
+    margin:0px;
+    font-size: 50px;
+    text-align: center;
+    padding-left: 480px;
+    padding-top:87px;
+    height:192px;
+    width:322px;
+    letter-spacing: 1.25px;
+    color: #FFF9F2;
+    line-height:1.28;
+
+}
+
+.ja_get{
+    padding-top:25px;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.6px;
+    margin:0px;
+}
+
+.get_pho{
+    width: 1006px;
+    height:602px;
+    margin-top:65px;
+    margin-left:137px;
+}
+.new h4{
+    display: block;
+    width:407px;
+    height: 48px;
+    margin-left: 437px;
+    margin-top:56px;
+    text-align: center;
+    line-height: 48px;
+    background-color: #191919;
+    color:#FFFFFF;
+}
+.insta_wrapper{
+    height:834px;
+    width:100%;
+}
+.insta{
+    height:834px;
+
+    width:1280px;
+    margin:0 auto;
+}
+.insta h2{
+    text-align: center;
+    margin-top:100px;
+    margin-bottom: 88px ;
+}
+.insta_pho{
+    display: flex;
+    justify-content:space-around;
+    margin:0 auto;
+}
+.girl{
+    width:349px;
+    height:451px;
+}
+.yellow{
+    width: 241px;
+    height:295px;
+}
+.man{
+    width: 284px;
+    height:283px;
+}
+.mail_wrapper{
+    height: 536px;
+    width: 100%;
+    background-color: #CED3CA;
+}
+.mail{
+    height: 536px;
+    width: 1280px;
+    background-color: #CED3CA;
+    margin: 0 auto;
+}
+.mail h2{
+    text-align: center;
+    padding-top:52px;
+    color: white;
+}
+.mail p{
+    padding-top:41px;
+    padding-left:339px;
+    line-height:1.875;
+}
+input,select, textarea {
+    -webkit-appearance: none;}
+.mail input[type="email"] {
+    width: 834px;
+    height: 65px;
+    border-style: solid ;
+    border-width: 2px;
+    border-color: #000; 
+    border-right-style :none;
+    vertical-align : middle;
+    padding: 0px;
+    font-size:16px;
+    padding-left:20px;
+}
+button {
+    width: 65px;
+    height: 69px;
+    border-style: solid ;
+    border-width: 2px;
+    border-color: #000; 
+    background-color: white;
+    font-size:20px;
+    cursor: pointer;
+    text-align: center;
+    vertical-align : middle;
+    padding:0px;
+
+}
+.mail_form{
+    text-align: center;
+    margin-top:38px;
+    height: 65px;
+    display: block;
+}
+footer{
+    height:384px;
+    width:100%;
+    background-color: #534D53;
+}
+.footer_contain{
+    height:384px;
+    width:1280px;
+    background-color: #534D53;
+    margin:0 auto;
+    position: relative;
+}
+.cs{
+    height: 147px;
+    width:243px;
+    padding-top:88px;
+    padding-left:146px;
+    color:#FFF;
+}
+footer ul{
+    padding-top:29px;
+    padding-left: 0px;
+    display: list-item;
+    list-style-type: none;
+    
+    
+}
+footer li{
+    margin-bottom:19px;
+    position: relative;
+}
+footer li:before{
+    content:"";
+    display:block;
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:0;
+    height:1px;
+    background-color:#ffffff;
+    -webkit-transition:width 0.2s ease;
+    -moz-transition:width 0.2s ease;
+    -o-transition:width 0.2s ease;
+    transition:width 0.2s ease;
+}
+footer li:hover:before {
+    width:100%;
+}
+.bottom{
+    position:absolute;
+    top:167px;
+    right:62px;
+    font-size: 40px;
+}
+
